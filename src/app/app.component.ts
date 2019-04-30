@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { MyService } from './my-service';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',
@@ -12,4 +15,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title: string = 'Working component!';
   x: number = 123;
+
+  constructor(private http: HttpClient, private myService: MyService) {
+    console.log(http);
+    this.myService.hello();
+  }
 }
