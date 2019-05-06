@@ -1,4 +1,4 @@
-## Angular 6 boilerplate using Babel 7 and `preset-babel`
+## Angular 7 boilerplate using Babel 7 and `preset-babel`
 
 To initialize:
 `npm install`
